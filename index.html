@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Handpan Sheet Music – write handpan notation on iPad</title>
+<meta name="description" content="A notation editor for handpan players, for iPad: tone fields and techniques in bars, black for the right hand and green for the left.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg: #f7f6f3; --text: #2b2b2b; --muted: #6b6b6b; --card: #ffffff; --line: #e3e0da; --green: #3b6e3f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1c1d21; --text: #e6e6e6; --muted: #a0a0a0; --card: #23252b; --line: #34363d; --green: #8fd18f; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  header img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 4px 16px rgba(0,0,0,.15); }
+  h1 { margin: 0; font-size: 36px; line-height: 1.15; }
+  .tagline { margin: 4px 0 0; color: var(--muted); font-size: 19px; }
+  .badge { display: inline-block; margin-top: 24px; padding: 10px 18px; border-radius: 999px;
+           background: var(--green); color: var(--bg); font-weight: 600; text-decoration: none; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 40px 0; }
+  .shots img { width: 100%; border-radius: 14px; border: 1px solid var(--line); display: block; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; padding: 0; list-style: none; }
+  .features li { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .features b { display: block; margin-bottom: 4px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 15px; display: flex; gap: 20px; flex-wrap: wrap; }
+  a { color: var(--green); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="App icon: a handpan on a music staff">
+    <div>
+      <h1>Handpan Sheet Music</h1>
+      <p class="tagline">Write handpan notation on your iPad.</p>
+    </div>
+  </header>
+  <span class="badge">Coming soon to the App Store</span>
+
+  <div class="shots">
+    <img src="screenshots/write.jpg" alt="Editing a sheet: palette of tone fields and techniques above the bars">
+    <img src="screenshots/section.jpg" alt="The settings of a section: time signature, slots per count, bars">
+    <img src="screenshots/dark.jpg" alt="The same sheet in the dark theme">
+  </div>
+
+  <ul class="features">
+    <li><b>Tone fields and techniques</b>Numbers for the tone fields; doum, tak, ka, ghost notes, slaps, knuckles, fist bass, harmonics and muted notes — or your own symbols.</li>
+    <li><b>Two hands, two colours</b>Black for the right hand, green for the left. Stack notes in one slot for chords.</li>
+    <li><b>Write with the Apple Pencil</b>Write numbers and symbols right on the bars; they turn into notes, and it learns your handwriting.</li>
+    <li><b>Sections</b>Named sections with their own time signature, slots per count and number of bars. Repeat, duplicate and reorder them.</li>
+    <li><b>Play mode</b>Hide the tools and lock the sheet while you play along.</li>
+    <li><b>Your files, shared your way</b>Sheets save by themselves as files in the Files app. Share them, or export a clean PDF to print.</li>
+  </ul>
+
+  <footer>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy policy</a>
+    <span>No account, no ads, no tracking.</span>
+  </footer>
+</main>
+</body>
+</html>
