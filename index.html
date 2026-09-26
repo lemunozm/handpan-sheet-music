@@ -22,6 +22,7 @@
   .badge { display: inline-block; margin-top: 24px; padding: 10px 18px; border-radius: 999px;
            background: var(--green); color: var(--bg); font-weight: 600; text-decoration: none; }
   .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 40px 0; }
+  .shots .wide { grid-column: 1 / -1; }
   .shots img { width: 100%; border-radius: 14px; border: 1px solid var(--line); display: block; }
   .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; padding: 0; list-style: none; }
   .features li { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
@@ -42,9 +43,13 @@
   <span class="badge">Coming soon to the App Store</span>
 
   <div class="shots">
-    <img src="screenshots/write.jpg" alt="Editing a sheet: palette of tone fields and techniques above the bars">
-    <img src="screenshots/section.jpg" alt="The settings of a section: time signature, slots per count, bars">
-    <img src="screenshots/dark.jpg" alt="The same sheet in the dark theme">
+    <img class="wide" src="screenshots/01-write.jpg" alt="Editing a sheet: palette of tone fields and techniques above the bars">
+    <img src="screenshots/02-section.jpg" alt="The settings of a section: time signature, slots per count, bars">
+    <img src="screenshots/03-pdf.jpg" alt="The share menu next to a page of the exported PDF">
+    <img src="screenshots/04-dark.jpg" alt="The same sheet in the dark theme">
+    <img src="screenshots/05-settings.jpg" alt="Settings: palette symbols, hands and language">
+    <img src="screenshots/06-library.jpg" alt="My sheets: the list of saved sheets">
+    <img src="screenshots/07-guide.jpg" alt="The How to use guide">
   </div>
 
   <ul class="features">
